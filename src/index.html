@@ -1,32 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PakePlus App</title>
-        <script type="module" src="/main.js" defer></script>
-    </head>
-
-    <body>
-        <main class="container">
-            <h1>Welcome to PakePlus</h1>
-            <form class="row" id="greet-form">
-                <input id="inputValue" placeholder="Enter a something..." />
-            </form>
-            <div class="resultBox">
-                <span>result: </span>
-                <span id="result"></span>
-            </div>
-            <div class="invokeBox">
-                <button id="openUrl">open_url_browser</button>
-                <button id="openUrlNew">open_url_new</button>
-                <button id="runCommand">run_command</button>
-                <button id="downloadFile">download_file</button>
-                <button id="getExeDir">get_exe_dir</button>
-                <button id="getEnvVar">get_env_var</button>
-                <button id="findPort">find_port</button>
-            </div>
-        </main>
-    </body>
-</html>
+<!DOCTYPE html><html lang=zh_CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>元农服农资追溯管理系统</title><style>#app-loading {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        background: #fff;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #app-loading .app-loading-content {
+        position: relative;
+        height: 200px;
+        text-align: center;
+        color: #e60012;
+      }
+      #app-loading .my-proverbs {
+        font-size: 30px;
+      }
+      #app-loading .my-proverbs-title,#app-loading .my-proverbs {
+        color: #e60012;
+      }</style><script src=//res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js></script><link href=/admin/css/chunk-0d875eef.c805e3e6.css rel=prefetch><link href=/admin/css/chunk-10ad76d6.7cb3b5a3.css rel=prefetch><link href=/admin/css/chunk-11238c45.8dae078c.css rel=prefetch><link href=/admin/css/chunk-18e34c6b.32f6dcbc.css rel=prefetch><link href=/admin/css/chunk-1b75bc38.e17878e2.css rel=prefetch><link href=/admin/css/chunk-1b9556d2.6ecd1ea7.css rel=prefetch><link href=/admin/css/chunk-2d7fd616.5d3db7ce.css rel=prefetch><link href=/admin/css/chunk-3b69e449.f0097221.css rel=prefetch><link href=/admin/css/chunk-4d964a43.718398a6.css rel=prefetch><link href=/admin/css/chunk-4f5fc7e4.73ea2b3e.css rel=prefetch><link href=/admin/css/chunk-4f637204.54b8ff55.css rel=prefetch><link href=/admin/css/chunk-6453e80c.6ad585c0.css rel=prefetch><link href=/admin/css/chunk-6f6d9292.c0597d48.css rel=prefetch><link href=/admin/css/chunk-781ccb30.097f1084.css rel=prefetch><link href=/admin/css/chunk-785ee22c.bc954b67.css rel=prefetch><link href=/admin/css/chunk-858bc976.ec8c3c78.css rel=prefetch><link href=/admin/css/chunk-cac83bbe.98a6da18.css rel=prefetch><link href=/admin/css/chunk-d516821e.09abdfa1.css rel=prefetch><link href=/admin/css/chunk-d634a2e4.1954d49a.css rel=prefetch><link href=/admin/css/chunk-e96b3bfe.c805e3e6.css rel=prefetch><link href=/admin/css/chunk-f4d9f932.2eccc8ee.css rel=prefetch><link href=/admin/js/chunk-0d875eef.d766073e.js rel=prefetch><link href=/admin/js/chunk-10ad76d6.f6204260.js rel=prefetch><link href=/admin/js/chunk-11238c45.7448bafd.js rel=prefetch><link href=/admin/js/chunk-18e34c6b.6b8ed8f9.js rel=prefetch><link href=/admin/js/chunk-1b75bc38.778e330b.js rel=prefetch><link href=/admin/js/chunk-1b9556d2.961b7653.js rel=prefetch><link href=/admin/js/chunk-235d5840.83bd7aa8.js rel=prefetch><link href=/admin/js/chunk-2d0be678.7cfc03c7.js rel=prefetch><link href=/admin/js/chunk-2d0d4033.73ab80a4.js rel=prefetch><link href=/admin/js/chunk-2d21767d.19317d24.js rel=prefetch><link href=/admin/js/chunk-2d22fcd3.c9d09904.js rel=prefetch><link href=/admin/js/chunk-2d230fe7.e6c15eac.js rel=prefetch><link href=/admin/js/chunk-2d7fd616.b9021358.js rel=prefetch><link href=/admin/js/chunk-3b69e449.42336467.js rel=prefetch><link href=/admin/js/chunk-4d964a43.60011cf1.js rel=prefetch><link href=/admin/js/chunk-4f5fc7e4.ee76a8f6.js rel=prefetch><link href=/admin/js/chunk-4f637204.46a6b001.js rel=prefetch><link href=/admin/js/chunk-5595f6be.a5c253d2.js rel=prefetch><link href=/admin/js/chunk-6453e80c.cbe0621d.js rel=prefetch><link href=/admin/js/chunk-6a63c8a1.da02eaba.js rel=prefetch><link href=/admin/js/chunk-6e83591c.22ec3898.js rel=prefetch><link href=/admin/js/chunk-6f6d9292.1e82e850.js rel=prefetch><link href=/admin/js/chunk-781ccb30.d2a02614.js rel=prefetch><link href=/admin/js/chunk-785ee22c.6dc4424f.js rel=prefetch><link href=/admin/js/chunk-858bc976.9198cc91.js rel=prefetch><link href=/admin/js/chunk-a888ed70.87d7df2f.js rel=prefetch><link href=/admin/js/chunk-cac83bbe.a55c4c29.js rel=prefetch><link href=/admin/js/chunk-d516821e.e22f6249.js rel=prefetch><link href=/admin/js/chunk-d634a2e4.630679fb.js rel=prefetch><link href=/admin/js/chunk-e96b3bfe.6dab0058.js rel=prefetch><link href=/admin/js/chunk-f4d9f932.cf661849.js rel=prefetch><link href=/admin/css/app.4fbcf0d4.css rel=preload as=style><link href=/admin/css/chunk-vendors.4a9a9bde.css rel=preload as=style><link href=/admin/js/app.f12f6b23.js rel=preload as=script><link href=/admin/js/chunk-vendors.caeaaab7.js rel=preload as=script><link href=/admin/css/chunk-vendors.4a9a9bde.css rel=stylesheet><link href=/admin/css/app.4fbcf0d4.css rel=stylesheet></head><body><noscript><strong>很抱歉，没有启用JavaScript，程序不能正常工作。请启用后继续。</strong></noscript><div id=app-loading><div class=app-loading-content><h3 class=my-proverbs>元农服农资追溯管理系统</h3></div></div><div id=app></div><script src=/admin/plugs/tinymce5.10.0/tinymce.min.js></script><script src=/admin/js/chunk-vendors.caeaaab7.js></script><script src=/admin/js/app.f12f6b23.js></script></body></html>
